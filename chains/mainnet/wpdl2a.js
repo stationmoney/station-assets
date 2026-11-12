@@ -2,10 +2,10 @@ module.exports = {
   chainID: 'wpd-l2a-mainnet-1',
   lcd: 'https://api-l2a.peaceism.io',
   gasAdjustment: 1.75,
-  gasPrices: { leea: 0 },
-  prefix: 'leea',
+  gasPrices: { poatoken: 0 },
+  prefix: 'poa',
   coinType: '118',
-  baseAsset: 'leea',
+  baseAsset: 'poatoken',
   name: 'wpd-l2a-mainnet-1',
   icon: process.env.CF_PAGES_URL + '/img/chains/LEEA.png',
   channels: {},
@@ -16,6 +16,13 @@ module.exports = {
     block: 'https://explorer.peaceism.io',
   },
   tokens: [
+    {
+      token: 'poatoken',
+      symbol: 'POATOKEN',
+      name: 'POATOKEN',
+      icon: process.env.CF_PAGES_URL + '/img/chains/LEEA.png',
+      decimals: 8,
+    },
     {
       token: 'leea',
       symbol: 'LEEA',
